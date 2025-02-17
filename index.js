@@ -6,6 +6,10 @@ App.setPosition = function(x, y, img) {
     img.style.top = y + 'px';
 }
 
+App.setSize = function(size) {
+	App.img.style.width = `${size}px`;
+}
+
 
 App.init = function() {
 	App.img = document.getElementById("img");
@@ -14,7 +18,7 @@ App.init = function() {
     App.width = window.innerWidth;
     App.height = window.innerHeight;
 
-	this.img.style.width = "500px";
+	App.setSize(500);
 	
 	this.x = 0;
 	this.y = 0;
@@ -26,12 +30,10 @@ App.init = function() {
 
 	App.setPosition(0, 0, this.img);
     App.noLoop = false;
+	console.log("Version 1.3")
     window.requestAnimationFrame(App.appLoop);
 }
 
-App.setSize = function(size) {
-	App.img.style.width = `${size}px`;
-}
 
 App.appLoop = function(timeStamp) {
     if (App.noLoop) {
