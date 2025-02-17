@@ -8,7 +8,7 @@ App.setPosition = function(x, y, img) {
 
 
 App.init = function() {
-	this.img = document.getElementById("img");
+	App.img = document.getElementById("img");
 	App.frames = 0;
     App.oldTimeStamp = 0;
     App.width = window.innerWidth;
@@ -27,6 +27,10 @@ App.init = function() {
 	App.setPosition(0, 0, this.img);
     App.noLoop = false;
     window.requestAnimationFrame(App.appLoop);
+}
+
+App.setSize = function(size) {
+	App.img.style.width = `${size}px`;
 }
 
 App.appLoop = function(timeStamp) {
