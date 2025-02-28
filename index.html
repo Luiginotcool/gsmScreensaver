@@ -2,9 +2,22 @@
 <html>
 	<head>
 		<title>Gell St. Massive</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="./input.js"></script>
 		<script src="./index.js"></script>
 	</head>
-	<body style="background-color: black">
-		<img src="./gsm0.png" id="img" alt="gsm4ever">
+	<body style="background-color: black; margin: 0;">
+		<audio autoplay loop id="audio">
+			<source src="lobby.mp3" type="audio/mpeg">
+		</audio>
+		<div id = "svgs"></div>
+		<div class="menu cls-3 cl">
+			<div class="menu-info" id="info">Press Ctrl+M to toggle</div>
+			<div class="menu-item" id="close">Close</div>
+			<div class="menu-item" id="spawn">Spawn Box</div>
+			<div class="menu-item" id="reset">Reset</div>
+			<div class="menu-item" id="play">Play Music</div>
+			<div class="menu-item"><input type="range" min="1" max="100" value="50" id="volume"></div>
+		</div>
 	</body>
 </html>

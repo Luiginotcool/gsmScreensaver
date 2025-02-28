@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 0;
+}
+
+svg {
+    position: relative;
+    z-index: -1;
+}
+
+/* Menu container */
+.menu {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    border-radius: 10px;
+    justify-content: center;
+    place-items: center;
+}
+
+/* Menu item style */
+.menu-item {
+    padding: 0;
+    width: 90%;
+    height: 90%;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-info {
+    padding: 0;
+    width: 90%;
+    height: 90%;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect for menu items */
+.menu-item:hover {
+    background-color: #666;
+}
+
+.hidden {display: none;}
+
+.cls-1, .cls-2 {
+    fill: #231f20;
+    background-color: #231f20;
+  }
+
+  .cls-3, .cls-4 {
+    fill: #ebc8ff;
+    background-color: #ebc8ff
+  }
+
+  .cls-5 {
+    fill: red;
+  }
+
+  .cls-5, .cls-4, .cls-2 {
+    fill-rule: evenodd;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4 {
+    z-index: -1;
+  }
+
+#volume {
+    width: 100%;
+}
